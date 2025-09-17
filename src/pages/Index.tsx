@@ -18,7 +18,7 @@ const Index = () => {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">¿Por qué elegir ClassTuu?</h2>
+            <h2 className="text-4xl font-bold mb-4">¿Por qué elegir SKILO?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Hemos creado la plataforma más segura y confiable para conectar 
               estudiantes con los mejores tutores locales.
@@ -70,7 +70,7 @@ const Index = () => {
             ¿Listo para empezar a aprender?
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Únete a miles de estudiantes que ya han encontrado su tutor ideal en ClassTuu.
+            Únete a miles de estudiantes que ya han encontrado su tutor ideal en SKILO.
             ¡Tu próxima clase te está esperando!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -93,7 +93,7 @@ const Index = () => {
                 <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-lg">C</span>
                 </div>
-                <span className="text-2xl font-bold">ClassTuu</span>
+                <span className="text-2xl font-bold">SKILO</span>
               </div>
               <p className="text-background/80 mb-4">
                 La plataforma líder para encontrar tutores locales verificados.
@@ -131,7 +131,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-background/20 mt-8 pt-8 text-center text-background/60">
-            <p>&copy; 2024 ClassTuu. Todos los derechos reservados.</p>
+            <p>&copy; 2024 SKILO. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
