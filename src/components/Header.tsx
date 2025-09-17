@@ -31,31 +31,33 @@ const Header = () => {
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
-              <NavigationMenuTrigger>Categorías</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-[400px] gap-3 p-4 md:w-[500px] lg:w-[600px] lg:grid-cols-2">
-                  {[
-                    { title: "Música", desc: "Guitarra, Piano, Canto, Batería" },
-                    { title: "Artes", desc: "Cerámica, Pintura, Escultura" },
-                    { title: "Deportes", desc: "Patinaje, Tenis, Yoga, Natación" },
-                    { title: "Académico", desc: "Matemáticas, Física, Historia" },
-                    { title: "Idiomas", desc: "Inglés, Francés, Alemán, Italiano" },
-                    { title: "Tecnología", desc: "Programación, Diseño, Excel" },
-                  ].map((item) => (
-                    <NavigationMenuLink
-                      key={item.title}
-                      className={cn(
-                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      )}
-                    >
-                      <div className="text-sm font-medium leading-none">{item.title}</div>
-                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        {item.desc}
-                      </p>
-                    </NavigationMenuLink>
-                  ))}
-                </div>
-              </NavigationMenuContent>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Categorías</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid w-[400px] gap-3 p-4 md:w-[500px] lg:w-[600px] lg:grid-cols-2">
+                    {[
+                      { title: "Música", desc: "Guitarra, Piano, Canto, Batería" },
+                      { title: "Artes", desc: "Cerámica, Pintura, Escultura" },
+                      { title: "Deportes", desc: "Patinaje, Tenis, Yoga, Natación" },
+                      { title: "Académico", desc: "Matemáticas, Física, Historia" },
+                      { title: "Idiomas", desc: "Inglés, Francés, Alemán, Italiano" },
+                      { title: "Tecnología", desc: "Programación, Diseño, Excel" },
+                    ].map((item) => (
+                      <NavigationMenuLink
+                        key={item.title}
+                        className={cn(
+                          "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        )}
+                      >
+                        <div className="text-sm font-medium leading-none">{item.title}</div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          {item.desc}
+                        </p>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
