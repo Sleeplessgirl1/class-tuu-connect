@@ -42,6 +42,7 @@ const Header = () => {
                       { title: "Académico", desc: "Matemáticas, Física, Historia" },
                       { title: "Idiomas", desc: "Inglés, Francés, Alemán, Italiano" },
                       { title: "Tecnología", desc: "Programación, Diseño, Excel" },
+                      { title: "Meditación", desc: "Mindfulness, Yoga, Relajación" },
                     ].map((item) => (
                       <NavigationMenuLink
                         key={item.title}

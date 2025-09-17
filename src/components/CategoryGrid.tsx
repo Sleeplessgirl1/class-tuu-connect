@@ -1,4 +1,4 @@
-import { Music, Palette, Trophy, BookOpen, Globe, Laptop } from "lucide-react";
+import { Music, Palette, Trophy, BookOpen, Globe, Laptop, Brain } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const categoryColors = {
@@ -7,7 +7,8 @@ const categoryColors = {
   sports: "bg-category-sports/10 text-category-sports",
   academic: "bg-category-academic/10 text-category-academic",
   languages: "bg-category-languages/10 text-category-languages",
-  tech: "bg-category-tech/10 text-category-tech"
+  tech: "bg-category-tech/10 text-category-tech",
+  meditation: "bg-category-meditation/10 text-category-meditation"
 };
 
 const categoryTextColors = {
@@ -16,7 +17,8 @@ const categoryTextColors = {
   sports: "text-category-sports", 
   academic: "text-category-academic",
   languages: "text-category-languages",
-  tech: "text-category-tech"
+  tech: "text-category-tech",
+  meditation: "text-category-meditation"
 };
 
 const categories = [
@@ -61,6 +63,13 @@ const categories = [
     color: "tech",
     count: "134+ tutores",
     examples: "Programación, Diseño, Excel, Photoshop"
+  },
+  {
+    name: "Meditación",
+    icon: Brain,
+    color: "meditation",
+    count: "87+ tutores", 
+    examples: "Mindfulness, Yoga, Relajación, Respiración"
   }
 ];
 
